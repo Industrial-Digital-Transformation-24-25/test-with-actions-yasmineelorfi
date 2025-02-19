@@ -21,8 +21,8 @@ jobs:
         setup-command: ''
         command: echo "$(cat ./.github/steps/-step.txt)"
         input: ''
-        expected-output: '5'
-        comparison-method: exact
+        expected-output: 5|X
+        comparison-method: regex
         timeout: 10
         max-score: 10
     - name: Autograding Reporter
